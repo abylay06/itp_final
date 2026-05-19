@@ -6,7 +6,6 @@ MomGuide is a Flask-based web application designed to support new mothers throug
 
 ✨ Features
 
-
 Baby Basics — 10 essential rules every new mother should know
 
 Knowledge Quiz — 10-question quiz with instant scoring and result saved to CSV
