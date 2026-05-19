@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}Stories{% endblock %}
+{% block content %}
+
+<h1>Mom Stories 💬</h1>
+<p class="subtitle">Share your experience and read others' too.</p>
+
+<div class="card">
+  <form method="POST">
+    <div class="form-group">
+      <label>Your name</label>
+      <input type="text" name="author" placeholder="e.g. Assel" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label>Your story</label>
+      <textarea name="story" placeholder="Share a win, a struggle, a funny moment..."></textarea>
+    </div>
+    <button type="submit" class="btn">Post Story →</button>
+  </form>
+</div>
+
+{% if stories %}
+  {% for s in stories %}
+  <div class="story">
+    <div class="author">{{ s.author }}</div>
+    <div class="date">{{ s.date }}</div>
+    <div class="text">{{ s.content }}</div>
+  </div>
+  {% endfor %}
+{% else %}
+  <p style="text-align:center; color:#aaa; margin-top:1rem;">No stories yet — be the first!</p>
+{% endif %}
+
+{% endblock %}

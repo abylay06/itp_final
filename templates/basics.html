@@ -1,32 +1,21 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block title %}Baby Basics{% endblock %}
+{% block content %}
 
-<html lang="en">
-    <head>
-        <title>Basics</title>
-    </head>
-    <body>
-        <h1>Essential Rules for New Mothers</h1>
+<h1>Essential Baby Rules 📖</h1>
+<p class="subtitle">10 golden rules every new mother should know.</p>
 
-        <ol>
-            <li>Always place the baby on their back to sleep.</li>
+<ol class="basics-list">
+  <li><span class="num">1</span>Always place the baby on their back to sleep.</li>
+  <li><span class="num">2</span>Never shake a baby, even when overwhelmed.</li>
+  <li><span class="num">3</span>Feed regularly and monitor wet diapers.</li>
+  <li><span class="num">4</span>Wash hands before handling the baby.</li>
+  <li><span class="num">5</span>Never ignore a fever or breathing problems.</li>
+  <li><span class="num">6</span>Always use a rear-facing car seat.</li>
+  <li><span class="num">7</span>Never leave the baby unattended on high surfaces.</li>
+  <li><span class="num">8</span>Respond calmly to crying.</li>
+  <li><span class="num">9</span>Keep all doctor visits and vaccinations.</li>
+  <li><span class="num">10</span>Ask for help when exhausted.</li>
+</ol>
 
-            <li>Never shake a baby, even when overwhelmed.</li>
-
-            <li>Feed the baby regularly and monitor wet diapers.</li>
-
-            <li>Wash hands before handling the baby.</li>
-
-            <li>Do not ignore fever or breathing problems.</li>
-
-            <li>Always use a rear-facing car seat.</li>
-
-            <li>Never leave the baby unattended on high surfaces.</li>
-
-            <li>Respond calmly to crying and discomfort.</li>
-
-            <li>Keep regular doctor visits and vaccinations.</li>
-
-            <li>Ask for help when physically or emotionally exhausted.</li>
-        </ol>
-    </body>
-</html>
+{% endblock %}

@@ -1,41 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head lang="en">
-        <title>Home</title>
-        
-        <style>
-            a {
-                margin: 2px;
-                display: block;
-                background-color: black;
-                color: red;
-                justify-content: space-around
-            }
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
 
-            a:hover {
-                color: yellow;
-            }
-        
-            .links-div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 150px;
-            }
-        </style>
-    </head>
-    <body style="text-align:center; margin-top: 50px;">
-        <h1>Congratulations!!! You are now officially a mom!!!</h1>
+<h1>Welcome to MomGuide 🌸</h1>
+<p class="subtitle">Your helpful guide through the first year of motherhood.</p>
 
-        <h3>Here are some useful resources to help you become even better
-            than you already are!!!</h3>
-        <div class="links-div">
-            <a href="/basics">Learn the basics</a>
-            <a href="/quiz">Check basics knowledge</a>
-            <a href="/health">Check your health</a>
-            <a href="/development">See baby's development</a>
-            <a href="/support">Get some support</a>
-            <a href="/news">Cool news about babies</a>
-        </div>    
-    </body>
-</html>
+<div class="grid">
+  <a href="/basics" class="grid-card">
+    <div class="icon">📖</div>
+    <h3>Baby Basics</h3>
+    <p>10 essential rules for new mothers.</p>
+  </a>
+  <a href="/quiz" class="grid-card">
+    <div class="icon">✏️</div>
+    <h3>Take the Quiz</h3>
+    <p>Test your baby care knowledge.</p>
+  </a>
+  <a href="/development" class="grid-card">
+    <div class="icon">🚀</div>
+    <h3>Milestones</h3>
+    <p>Track your baby's growth month by month.</p>
+  </a>
+  <a href="/stories" class="grid-card">
+    <div class="icon">💬</div>
+    <h3>Mom Stories</h3>
+    <p>Share your experience with other moms.</p>
+  </a>
+  <a href="/chatbot" class="grid-card">
+    <div class="icon">🤖</div>
+    <h3>AI Chatbot</h3>
+    <p>Ask any question about baby care.</p>
+  </a>
+</div>
+
+{% endblock %}

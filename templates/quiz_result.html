@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}Your Result{% endblock %}
+{% block content %}
+
+<div class="card result">
+  {% if score == 10 %}🏆{% elif score >= 7 %}🎉{% elif score >= 5 %}🌱{% else %}📖{% endif %}
+  <div class="score">{{ score }}/10</div>
+  {% if score == 10 %}
+    <p>Perfect score, {{ name }}! You're ready for anything!</p>
+  {% elif score >= 7 %}
+    <p>Great job, {{ name }}! You know your basics well.</p>
+  {% elif score >= 5 %}
+    <p>Good effort, {{ name }}! A quick review will help.</p>
+  {% else %}
+    <p>Keep learning, {{ name }}! Check the Basics page.</p>
+  {% endif %}
+  <div class="btn-row">
+    <a href="/quiz" class="btn btn-outline">Try Again</a>
+    <a href="/basics" class="btn">Review Basics</a>
+  </div>
+</div>
+
+{% endblock %}

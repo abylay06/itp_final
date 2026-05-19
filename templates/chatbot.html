@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Chatbot{% endblock %}
+{% block content %}
+
+<h1>AI Chatbot 🤖</h1>
+<p class="subtitle">Ask anything about baby care and motherhood.</p>
+
+{% if answer %}
+<div class="answer-box">
+  <div class="q">You asked: "{{ question }}"</div>
+  <div class="a">{{ answer }}</div>
+</div>
+{% endif %}
+
+<div class="card">
+  <form method="POST">
+    <div class="form-group">
+      <label>Your question</label>
+      <textarea name="question" placeholder="e.g. How often should I feed my newborn?" required>{% if question %}{{ question }}{% endif %}</textarea>
+    </div>
+    <button type="submit" class="btn">Ask →</button>
+  </form>
+</div>
+
+{% endblock %}
