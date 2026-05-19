@@ -18,25 +18,18 @@ AI Chatbot — Ask any baby care question powered by Groq's LLaMA 3 model
 
 
 🛠️ Technologies Used
-CategoryTechnologyBackendPython 3, FlaskFrontendHTML5, CSS3, Jinja2 TemplatesAI ChatbotGroq API (LLaMA 3.3 70B)Data StorageJSON (stories), CSV (quiz results)OOP ConceptsClasses, Inheritance, Decorators, GeneratorTestingPython unittestDeploymentRender
+yBackend: Python 3, FlaskFrontendHTML5, CSS3, Jinja2 Templates
 
-📁 Project Structure
-momguide/
-├── main.py               # Flask app — routes, classes, logic
-├── test_app.py           # Unit tests
-├── stories.json          # Stored community stories
-├── quiz_results.csv      # Stored quiz scores
-├── static/
-│   └── style.css         # All styling
-└── templates/
-    ├── layout.html        # Base template
-    ├── index.html         # Home page
-    ├── basics.html        # Baby basics page
-    ├── quiz.html          # Quiz page
-    ├── quiz_result.html   # Quiz result page
-    ├── development.html   # Milestones page
-    ├── stories.html       # Stories page
-    └── chatbot.html       # AI chatbot page
+AI Chatbot: Groq API (LLaMA 3.3 70B) 
+
+Data Storage: JSON (stories), CSV (quiz results)
+
+OOP Concepts: Classes, Inheritance, Decorators, Generator
+
+Testing: Python unittest
+
+Deployment: Render
+
 
 ▶️ How to Run
 
