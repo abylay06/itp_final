@@ -6,10 +6,15 @@ MomGuide is a Flask-based web application designed to support new mothers throug
 
 ✨ Features
 
+
 Baby Basics — 10 essential rules every new mother should know
+
 Knowledge Quiz — 10-question quiz with instant scoring and result saved to CSV
+
 Milestone Tracker — Month-by-month baby development guide (Month 1 to 12)
+
 Mom Stories — Community board where mothers can share and read experiences (stored in JSON)
+
 AI Chatbot — Ask any baby care question powered by Groq's LLaMA 3 model
 
 
@@ -35,6 +40,9 @@ momguide/
     └── chatbot.html       # AI chatbot page
 
 ▶️ How to Run
+
 The project is deployed and accessible at:
-👉 https://your-app-name.onrender.com
+
+👉 https://itp-final.onrender.com/
+
 Simply open the link in any browser — no installation needed.
